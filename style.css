@@ -1,0 +1,473 @@
+/* CSS RESET */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#header .header-content #header-navigation{
+    position: absolute;
+    right: 58px;
+    top: 51px;
+    display: inline-block;
+}
+
+#header .header-content #header-logo #header-navigation a.book{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 0.6em 1.6em;
+    margin: 22px;
+    font-family: 'Marcellus', serif;
+}
+
+#header .header-content #header-logo #header-navigation a.book:hover{
+    background-color: black;
+    color: white;
+}
+
+#header .header-content #header-logo #header-navigation a.menu{
+    padding: 0.9em 1.6em;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* text-shadow: 1px 1px 3px #000; */
+    transition: 0.15s;
+    text-decoration: none;
+}
+
+#header .header-content #header-logo #header-navigation a.menu:hover{
+    background-color: black;
+    padding: 0.9em 1.6em;
+}
+
+#header .header-content #header-navigation a.menu span{
+    vertical-align: middle;
+    font-family: 'Marcellus', serif;
+    font-size: 21px;
+    color: white;
+}
+
+#header .header-content #header-navigation a.menu img{
+    vertical-align: middle;
+}
+.logo{
+    margin: 60px;
+    margin-top: 180px;
+    margin-bottom: 100px;
+}
+#navbar{
+    padding: 0px;
+    border-left: 2px solid rgba(255, 255, 255, 0.8);
+    margin-left: 64px;
+    margin-bottom: 3em;
+}
+
+#navbar ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* padding-inline-start: 40px; */
+}
+
+#navbar ul li{
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    padding: 10px 0px;
+}
+
+#navbar ul li a{
+    padding: 2px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Marcellus', serif;
+}
+
+#navbar ul li a span{
+    font-size: 32px;
+}
+
+#navbar ul li a:hover{
+    color: gray;
+}
+
+#home::before{
+    content: "";
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.content-container .content-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    height: auto;
+}
+
+.content-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 6em 3em 0 3em;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.content-item.photo{
+    width: 65%;
+}
+
+.content-container .content-item.center-vertical {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-container .content-item.text {
+    flex: 0 1 32.7%;
+}
+
+span.span{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(218, 218, 218);
+    line-height: 32px;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0 0 16px 0;
+}
+
+p{
+    font-size: 20px;
+    color: rgb(218, 218, 218);
+    line-height: 30px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 0 22px 0;
+    font-weight: 500;
+}
+
+ul{
+    margin-bottom: 40px;
+}
+
+ul li{
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 56px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    color: rgb(218, 218, 218);
+}
+
+.button{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 14px 40px;
+    font-family: 'Marcellus', serif;
+    font-size: 1.7rem;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}
+
+.decoretive-photos{
+    padding: 3em 3em 0 3em;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.decoretive-item.narrow img{
+    width: 465px;
+    flex: 0 1 38.4%;
+}
+
+.decoretive-item.narrow{
+    width: 28%;
+}
+
+.decoretive-item.wide img{
+    width: 100%;
+    height: 465px;
+    flex: 0 1 58.7%;
+    padding-left: 26px;
+}
+
+.decoretive-item.wide{
+    width: 976px;
+}
+
+.wide-photos img{
+    width: 1420px;
+    height: 740px;
+    padding: 3em 0 0 0;
+}
+
+.homepage .special-slider-container{
+    padding: 3em;
+    margin: 3em 0 0 0;
+
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .content{
+    display: flex;
+    flex: 0 1 51%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .photo{
+    display: flex;
+    flex: 0 1 45%;
+    text-align: right;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .photo img{
+    width: 600px;
+    object-fit: contain;
+    margin: 0 0 10px 0;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .content .span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    line-height: 1rem;
+    color: rgb(218, 218, 218);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .content h2{
+    font-size: 2.3rem;
+    margin: 0 0 1rem 0;
+    line-height: 3rem;
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .content p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 3rem 0;
+    line-height: 1em;
+}
+.homepage .special-slider-container #special-slider .item .item-flex .content .para{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 0rem 0;
+    line-height: 2.5em;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .content .book{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 14px 70px;
+    font-family: 'Marcellus', serif;
+    font-size: 1.7rem;
+    /* margin: 0 12px; */
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .content .book:hover{
+    background-color: black;
+    color: white;
+}
+
+.special-slider-container .special-arrows{
+    margin: 72px auto;
+    text-align: center;
+    max-width: 300px;
+
+}
+
+.special-slider-container .special-arrows .more-offers:link{
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.special-slider-container .special-arrows .more-offers{
+    color: white;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .views-photo{
+    display: flex;
+    flex: 0 1 65%;
+    text-align: right;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .views-photo img{
+    width: 955px;
+    object-fit: contain;
+    margin: 0 0 10px 0;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .views-content{
+    display: flex;
+    flex: 0 1 30%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .views-content h2{
+    font-size: 2.3rem;
+    margin: 0 0 1rem 0;
+    line-height: 3rem;
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .views-content p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    line-height: 2.3em;
+}
+.homepage .special-slider-container #special-slider .item .item-flex .views-content .para{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 3rem 0;
+    line-height: 2.5em;
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .views-content .book{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 14px 70px;
+    font-family: 'Marcellus', serif;
+    font-size: 1.7rem;
+    /* margin: 0 12px; */
+}
+
+.homepage .special-slider-container #special-slider .item .item-flex .views-content .book:hover{
+    background-color: black;
+    color: white;
+}
+
+.homepage #our-images{
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage #our-images .images img{
+    width: 249px;
+    height: 160px;
+}
+.homepage #our-images .images{
+    display: inline;
+}
+
+.homepage .footer{
+    padding: 2em 0;
+    margin-left: 3em;
+}
+.homepage .footer .footer-container .footer-logo img{
+    width: 300px;
+}
+
+.footer .footer-container > div.extra{
+    text-align: right;
+}
+
+.extra .extra-item{
+    display: inline-block;
+    font-size: 1rem;
+    
+}
+
+.extra .extra-item a:link{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 120px;
+}
+.extra .extra-item address::before{
+    /* content: "\f3c5"; */
+    font-family: "Icons-Solid";
+    font-size: 2rem;
+    margin-right: 0.2em;
+    vertical-align: sub;
+    
+}
+
+/* .extra .extra-item .address:before, .extra .extra-item .phone:before, .extra .extra-item .email:before {
+    font-family: "Icons-Solid";
+    font-size: 2rem;
+    margin-right: 0.2em;
+    vertical-align: sub;
+} */
+.extra .extra-item a{
+    color: rgb(218, 218, 218);
+    font-style: normal;
+}
+
+.extra .extra-item a:hover{
+    color: gray;
+}
+
+.footer-copyright p{
+    font-size: 1rem;
+    font-weight: 450;
+}
+
+.footer-copyright a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 350;
+    padding: 0 2px;
+}
+
+.footer-copyright a:hover{
+    background-color: white;
+    color: black;
+    padding: 0 2px;
+}
